@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%);
+}
+
+#div-form {
+  background: #26263a;
+  padding: 36px 44px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#form-pessoa {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-pessoa label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #9ca3d4;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.elem-form-01,
+.elem-form-02 {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #fff;
+  background: #1e1e2f;
+  border: 1px solid #3a3a55;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.elem-form-01::placeholder {
+  color: #6b6b8a;
+}
+
+.elem-form-01:focus,
+.elem-form-02:focus {
+  border-color: #7c5cff;
+  box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.25);
+}
+
+.elem-form-02 {
+  cursor: pointer;
+}
+
+.elem-form-02 option {
+  background: #1e1e2f;
+  color: #fff;
+}
+
+#div-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+#div-btns button {
+  padding: 11px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+#btnSalvar {
+  background: linear-gradient(135deg, #7c5cff 0%, #5c3cff 100%);
+  color: #fff;
+}
+
+#btnSalvar:hover {
+  opacity: 0.9;
+}
+
+#btnLimpar {
+  background: transparent;
+  color: #9ca3d4;
+  border: 1px solid #3a3a55 !important;
+}
+
+#btnLimpar:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#div-btns button:active {
+  transform: scale(0.96);
+}
