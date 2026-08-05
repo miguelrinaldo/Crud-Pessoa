@@ -2,9 +2,10 @@ import { Routes } from '@angular/router';
 import { Formulario
  } from './component/formulario/formulario';
  import { HomeComponent } from './component/home-component/home-component';
+import { Lista } from './lista/lista';
 export const routes: Routes = [
     {
-        path: '/home',
+        path: '',
         redirectTo: 'home',
         pathMatch: 'full'
     },
@@ -16,5 +17,10 @@ export const routes: Routes = [
     {
         path:'cadastro',
         component: Formulario
+    },
+
+    {
+        path: 'lista',
+        component: Lista
     }
 ];
