@@ -2,6 +2,6 @@ export class Pessoa {
     id? : number
     nome?: string
     email?: string
-    cpf? : string
+    cpf? : number
     dataNascimento?: string
 }
