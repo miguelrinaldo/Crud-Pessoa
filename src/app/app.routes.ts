@@ -15,7 +15,7 @@ export const routes: Routes = [
 
     },
     {
-        path:'cadastro',
+        path:'cadastro/:id',
         component: Formulario
     },
 

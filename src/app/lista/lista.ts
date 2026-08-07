@@ -15,4 +15,5 @@ export class Lista {
   listar(){
     return this.pessoaService.listar()
   }
+   
 }

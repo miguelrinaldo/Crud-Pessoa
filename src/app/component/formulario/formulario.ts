@@ -15,13 +15,14 @@ export class Formulario {
   email = ''
   cpf = 0.0
   dataNascimento = ''
+  edit = false
 
   constructor(private pessoaService: PessoaService) { }
 
   salvar() {
     console.log(this.nome, this.email, this.cpf, this.dataNascimento)
     const pessoa = new Pessoa()
-    pessoa.id = this.pessoaService.tamanhoArray() + 1 //ARMENGANDO A GERAÇÃO DO ID
+    pessoa.id = this.pessoaService.tamanhoArray() + 1 //ARMAZENDO A GERAÇÃO DO ID
     pessoa.nome = this.nome
     pessoa.email = this.email
     pessoa.cpf = this.cpf
